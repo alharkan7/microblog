@@ -62,6 +62,7 @@
     {{ moment.lang(g.locale) }}
     <script>
         function translate(sourceElem, destElem, sourceLang, destLang) {
+            
             $.post('/translate', {
                 text: $(sourceElem).text(),
                 source_language: sourceLang,
